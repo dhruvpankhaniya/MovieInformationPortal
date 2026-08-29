@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Information Portal - Home</title>
+
+    <!-- CSS file will be linked here from Week 2 onwards -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header id="main-header">
+        <div class="logo">
+            <h1>🎬 Movie Portal</h1>
+        </div>
+
+        <!-- Navigation Menu: Home | Movies | Favorites | Reviews | Contact -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main>
+
+        <!-- ---------- Movie Banner Section ---------- -->
+        <section id="banner">
+            <img src="images/banners/banner1.jpg" alt="Featured Movie Banner">
+            <div class="banner-text">
+                <h2>Welcome to Movie Information Portal</h2>
+                <p>Discover, search and explore your favorite movies</p>
+                <button type="button">Explore Movies</button>
+            </div>
+        </section>
+
+        <!-- ---------- Featured Movies Section ---------- -->
+        <section id="featured-movies">
+            <h2>Featured Movies</h2>
+            <div class="card-container">
+
+                <!-- Sample Movie Card (repeated structure, filled dynamically later by JS) -->
+                <article class="movie-card">
+                    <img src="images/posters/movie1.jpg" alt="Movie Poster">
+                    <h3>Movie Title</h3>
+                    <p>Genre: Sci-Fi</p>
+                    <p>Rating: 8.8</p>
+                    <a href="movie-details.html">View Details</a>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/posters/movie2.jpg" alt="Movie Poster">
+                    <h3>Movie Title</h3>
+                    <p>Genre: Action</p>
+                    <p>Rating: 7.9</p>
+                    <a href="movie-details.html">View Details</a>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/posters/movie3.jpg" alt="Movie Poster">
+                    <h3>Movie Title</h3>
+                    <p>Genre: Drama</p>
+                    <p>Rating: 8.2</p>
+                    <a href="movie-details.html">View Details</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ---------- Popular Movies Section ---------- -->
+        <section id="popular-movies">
+            <h2>Popular Movies</h2>
+            <div class="card-container">
+
+                <article class="movie-card">
+                    <img src="images/posters/movie4.jpg" alt="Movie Poster">
+                    <h3>Movie Title</h3>
+                    <p>Genre: Comedy</p>
+                    <p>Rating: 7.5</p>
+                    <a href="movie-details.html">View Details</a>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/posters/movie5.jpg" alt="Movie Poster">
+                    <h3>Movie Title</h3>
+                    <p>Genre: Thriller</p>
+                    <p>Rating: 8.0</p>
+                    <a href="movie-details.html">View Details</a>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/posters/movie6.jpg" alt="Movie Poster">
+                    <h3>Movie Title</h3>
+                    <p>Genre: Animation</p>
+                    <p>Rating: 8.6</p>
+                    <a href="movie-details.html">View Details</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ---------- Movie Genres Section ---------- -->
+        <section id="genres">
+            <h2>Browse by Genre</h2>
+            <ul class="genre-list">
+                <li>Action</li>
+                <li>Comedy</li>
+                <li>Drama</li>
+                <li>Sci-Fi</li>
+                <li>Thriller</li>
+                <li>Animation</li>
+                <li>Horror</li>
+                <li>Romance</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="main-footer">
+        <p>&copy; 2026 Movie Information Portal | Web Technology - I (2301CS363)</p>
+        <p>Darshan Institute of Engineering and Technology</p>
+    </footer>
+
+    <!-- JS files will be linked here from Week 4 onwards -->
+    <!-- <script src="js/app.js"></script> -->
+
+</body>
+</html>

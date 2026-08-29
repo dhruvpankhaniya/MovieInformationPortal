@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Information Portal - Favorites</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header id="main-header">
+        <div class="logo">
+            <h1>🎬 Movie Portal</h1>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="favorites.html" class="active">Favorites</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main>
+
+        <h2>My Favorites / Watchlist</h2>
+
+        <!-- Message shown when no favorites are added yet (controlled by JS later) -->
+        <p id="empty-favorites-msg">You have not added any movies to your favorites yet.</p>
+
+        <!-- ---------- Favorite Movies Section (FR-07, FR-08) ---------- -->
+        <section id="favorites-list">
+            <div class="card-container" id="favorites-card-container">
+
+                <!-- Sample favorite movie card structure.
+                     Actual favorite movies will be added/removed dynamically
+                     using JavaScript and localStorage from Week 6 onwards -->
+                <article class="movie-card">
+                    <img src="images/posters/movie1.jpg" alt="Movie Poster">
+                    <h3>Inception</h3>
+                    <p>Genre: Sci-Fi</p>
+                    <p>Rating: 8.8</p>
+                    <a href="movie-details.html">View Details</a>
+                    <button type="button" class="remove-favorite-btn">Remove from Favorites</button>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="main-footer">
+        <p>&copy; 2026 Movie Information Portal | Web Technology - I (2301CS363)</p>
+        <p>Darshan Institute of Engineering and Technology</p>
+    </footer>
+
+    <!-- <script src="js/favorites.js"></script> -->
+    <!-- <script src="js/app.js"></script> -->
+
+</body>
+</html>

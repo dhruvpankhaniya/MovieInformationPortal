@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Information Portal - Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header id="main-header">
+        <div class="logo">
+            <h1>🎬 Movie Portal</h1>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html" class="active">Movies</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main>
+
+        <h2>Movie Listing</h2>
+
+        <!-- ---------- Search & Filter & Sort Section (FR-04, FR-05, FR-06) ---------- -->
+        <section id="search-filter-section">
+
+            <!-- Search Box -->
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search movie by title...">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-box">
+                <label for="genre-filter">Genre:</label>
+                <select id="genre-filter">
+                    <option value="all">All</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+
+                <label for="language-filter">Language:</label>
+                <select id="language-filter">
+                    <option value="all">All</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="gujarati">Gujarati</option>
+                </select>
+
+                <label for="year-filter">Release Year:</label>
+                <select id="year-filter">
+                    <option value="all">All</option>
+                    <option value="2026">2026</option>
+                    <option value="2020">2020</option>
+                    <option value="2010">2010</option>
+                </select>
+
+                <label for="rating-filter">Rating:</label>
+                <select id="rating-filter">
+                    <option value="all">All</option>
+                    <option value="9">9 &amp; above</option>
+                    <option value="7">7 &amp; above</option>
+                    <option value="5">5 &amp; above</option>
+                </select>
+            </div>
+
+            <!-- Sort Controls -->
+            <div class="sort-box">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="rating-high">Rating (High to Low)</option>
+                    <option value="rating-low">Rating (Low to High)</option>
+                    <option value="year-new">Year (Newest First)</option>
+                    <option value="year-old">Year (Oldest First)</option>
+                </select>
+            </div>
+
+        </section>
+
+        <!-- ---------- No Results Message (hidden by default, controlled by JS later) ---------- -->
+        <p id="no-results-msg" style="display:none;">No movies found matching your criteria.</p>
+
+        <!-- ---------- Movie Cards Section ---------- -->
+        <section id="movie-list">
+            <div class="card-container" id="movie-card-container">
+
+                <!-- Sample static cards; will be generated dynamically via JS/DOM from Week 5 -->
+                <article class="movie-card">
+                    <img src="images/posters/movie1.jpg" alt="Movie Poster">
+                    <h3>Inception</h3>
+                    <p>Genre: Sci-Fi</p>
+                    <p>Year: 2010</p>
+                    <p>Rating: 8.8</p>
+                    <p class="short-desc">A science-fiction thriller about dream-sharing technology.</p>
+                    <a href="movie-details.html">View Details</a>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/posters/movie2.jpg" alt="Movie Poster">
+                    <h3>Movie Title 2</h3>
+                    <p>Genre: Action</p>
+                    <p>Year: 2020</p>
+                    <p>Rating: 7.9</p>
+                    <p class="short-desc">Short description of the movie goes here.</p>
+                    <a href="movie-details.html">View Details</a>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/posters/movie3.jpg" alt="Movie Poster">
+                    <h3>Movie Title 3</h3>
+                    <p>Genre: Drama</p>
+                    <p>Year: 2018</p>
+                    <p>Rating: 8.2</p>
+                    <p class="short-desc">Short description of the movie goes here.</p>
+                    <a href="movie-details.html">View Details</a>
+                </article>
+
+                <!-- Add remaining sample cards up to minimum 15 movies during Week 4 (movie data) -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="main-footer">
+        <p>&copy; 2026 Movie Information Portal | Web Technology - I (2301CS363)</p>
+        <p>Darshan Institute of Engineering and Technology</p>
+    </footer>
+
+    <!-- <script src="js/movies.js"></script> -->
+    <!-- <script src="js/app.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Information Portal - Reviews</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header id="main-header">
+        <div class="logo">
+            <h1>🎬 Movie Portal</h1>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main>
+
+        <h2>Reviews &amp; Ratings</h2>
+
+        <!-- ---------- Review Submission Form (FR-09, FR-10, FR-13) ---------- -->
+        <section id="review-form-section">
+            <h3>Submit Your Review</h3>
+
+            <form id="review-form" novalidate>
+
+                <div class="form-group">
+                    <label for="reviewer-name">Name:</label>
+                    <input type="text" id="reviewer-name" name="reviewer-name" required>
+                    <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewer-email">Email:</label>
+                    <input type="email" id="reviewer-email" name="reviewer-email" required>
+                    <span class="error-msg" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-movie">Movie:</label>
+                    <select id="review-movie" name="review-movie" required>
+                        <option value="">-- Select Movie --</option>
+                        <option value="inception">Inception</option>
+                        <option value="movie2">Movie Title 2</option>
+                        <option value="movie3">Movie Title 3</option>
+                    </select>
+                    <span class="error-msg" id="movie-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-rating">Rating (1-10):</label>
+                    <input type="number" id="review-rating" name="review-rating" min="1" max="10" required>
+                    <span class="error-msg" id="rating-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-text">Review:</label>
+                    <textarea id="review-text" name="review-text" rows="4" required></textarea>
+                    <span class="error-msg" id="review-error"></span>
+                </div>
+
+                <button type="submit" id="submit-review-btn">Submit Review</button>
+            </form>
+        </section>
+
+        <!-- ---------- Display Reviews Section (FR-11) ---------- -->
+        <section id="reviews-display-section">
+            <h3>All Reviews</h3>
+
+            <div id="reviews-list">
+
+                <!-- Sample static review card; actual reviews generated dynamically
+                     using JavaScript/DOM from Week 6 onwards -->
+                <article class="review-card">
+                    <h4>Inception</h4>
+                    <p><strong>By:</strong> John Doe</p>
+                    <p><strong>Rating:</strong> 9/10</p>
+                    <p>Amazing concept and visuals, a must watch movie.</p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="main-footer">
+        <p>&copy; 2026 Movie Information Portal | Web Technology - I (2301CS363)</p>
+        <p>Darshan Institute of Engineering and Technology</p>
+    </footer>
+
+    <!-- <script src="js/validation.js"></script> -->
+    <!-- <script src="js/app.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Information Portal - Movie Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header id="main-header">
+        <div class="logo">
+            <h1>🎬 Movie Portal</h1>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main>
+
+        <!-- ---------- Movie Details Section (FR-03) ---------- -->
+        <!-- Content here is static placeholder for Week 1.
+             From Week 5 onwards, this section will be filled dynamically
+             using JavaScript/DOM based on the movie selected from movies.html -->
+        <section id="movie-details" class="details-container">
+
+            <div class="details-poster">
+                <img src="images/posters/movie1.jpg" alt="Movie Poster" id="details-poster-img">
+            </div>
+
+            <div class="details-info">
+                <h2 id="details-title">Inception</h2>
+
+                <p><strong>Genre:</strong> <span id="details-genre">Sci-Fi</span></p>
+                <p><strong>Release Year:</strong> <span id="details-year">2010</span></p>
+                <p><strong>Language:</strong> <span id="details-language">English</span></p>
+                <p><strong>Duration:</strong> <span id="details-duration">2h 28m</span></p>
+                <p><strong>Director:</strong> <span id="details-director">Christopher Nolan</span></p>
+                <p><strong>Cast:</strong> <span id="details-cast">Leonardo DiCaprio, Joseph Gordon-Levitt</span></p>
+                <p><strong>Rating:</strong> <span id="details-rating">8.8</span></p>
+
+                <h3>Description</h3>
+                <p id="details-description">A science-fiction thriller about a thief who steals corporate secrets through the use of dream-sharing technology.</p>
+
+                <button type="button" id="add-favorite-btn">Add to Favorites</button>
+            </div>
+
+            <!-- Trailer Section -->
+            <div class="details-trailer">
+                <h3>Trailer</h3>
+                <!-- Trailer video/iframe will be embedded here -->
+                <div class="trailer-placeholder">
+                    <p>Trailer video will be displayed here</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="main-footer">
+        <p>&copy; 2026 Movie Information Portal | Web Technology - I (2301CS363)</p>
+        <p>Darshan Institute of Engineering and Technology</p>
+    </footer>
+
+    <!-- <script src="js/movies.js"></script> -->
+    <!-- <script src="js/app.js"></script> -->
+
+</body>
+</html>
